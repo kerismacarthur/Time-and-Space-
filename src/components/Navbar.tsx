@@ -9,7 +9,7 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export default function Navbar() {
+export default function Navbar({ onBookNow }: { onBookNow: () => void }) {
   const [open, setOpen] = useState(false)
 
   return (
@@ -30,12 +30,12 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
+          <button
+            onClick={onBookNow}
             className="text-sm bg-[#7c9a7e] text-white px-4 py-2 rounded-full hover:bg-[#5a7a5c] transition-colors whitespace-nowrap"
           >
             Book a free consult
-          </a>
+          </button>
         </nav>
 
         {/* Mobile menu button */}
@@ -61,13 +61,12 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <a
-            href="#contact"
-            onClick={() => setOpen(false)}
+          <button
+            onClick={() => { setOpen(false); onBookNow() }}
             className="bg-[#7c9a7e] text-white px-6 py-3 rounded-full text-center hover:bg-[#5a7a5c] transition-colors mt-2 text-base"
           >
             Book a free consult
-          </a>
+          </button>
         </div>
       )}
     </header>

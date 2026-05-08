@@ -1,10 +1,6 @@
-import { useState } from 'react'
 import { CalendarDays } from 'lucide-react'
-import BookingWizard from './BookingWizard'
 
-export default function Contact() {
-  const [wizardOpen, setWizardOpen] = useState(false)
-
+export default function Contact({ onBookNow }: { onBookNow: () => void }) {
   return (
     <section id="contact" className="py-16 sm:py-20 md:py-24 bg-[#f7f4f0]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -32,7 +28,7 @@ export default function Contact() {
             works for you — all in a few easy steps.
           </p>
           <button
-            onClick={() => setWizardOpen(true)}
+            onClick={onBookNow}
             className="flex items-center gap-2 bg-[#7c9a7e] text-white px-8 py-3.5 rounded-full hover:bg-[#5a7a5c] transition-colors font-medium"
           >
             Book now
@@ -50,23 +46,21 @@ export default function Contact() {
           </p>
           <ul className="space-y-2 text-sm text-stone-500">
             <li>
-              <span className="text-stone-700 font-medium">Lifeline</span>{' '}
-              <a href="tel:131114" className="hover:text-[#7c9a7e] transition-colors">13 11 14</a> (24/7)
+              <span className="text-stone-700 font-medium">Lifeline </span>
+              <a href="tel:131114" className="hover:text-[#7c9a7e] transition-colors">13 11 14</a>
+              <span> (24/7)</span>
             </li>
             <li>
-              <span className="text-stone-700 font-medium">Beyond Blue</span>{' '}
+              <span className="text-stone-700 font-medium">Beyond Blue </span>
               <a href="tel:1300224636" className="hover:text-[#7c9a7e] transition-colors">1300 22 4636</a>
             </li>
             <li>
-              <span className="text-stone-700 font-medium">Emergency</span>{' '}
+              <span className="text-stone-700 font-medium">Emergency </span>
               <a href="tel:000" className="hover:text-[#7c9a7e] transition-colors">000</a>
             </li>
           </ul>
         </div>
       </div>
-
-      {/* Full-screen modal */}
-      {wizardOpen && <BookingWizard onClose={() => setWizardOpen(false)} />}
     </section>
   )
 }
