@@ -71,7 +71,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
       className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4"
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex max-h-[90vh]">
+      <div className="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex h-[85vh] max-h-[680px]">
 
         {/* Left panel — crisis info, always visible on md+ */}
         <div className="hidden md:flex flex-col w-64 lg:w-72 shrink-0 bg-[#f7f4f0] p-8 justify-between">
