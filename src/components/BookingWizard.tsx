@@ -202,6 +202,12 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
                   </button>
                 ))}
               </div>
+              <button
+                onClick={() => setStep(4)}
+                className="mt-8 text-stone-400 hover:text-stone-600 text-sm transition-colors underline underline-offset-2"
+              >
+                Skip
+              </button>
             </div>
           )}
 
@@ -224,28 +230,15 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           )}
         </div>
 
-        {/* Footer — Back always available, Skip on step 3 */}
-        {step < 4 && (
-          <div className="px-6 sm:px-10 py-5 sm:py-6 border-t border-stone-100 flex items-center justify-between shrink-0">
-            {step > 1 ? (
-              <button
-                onClick={() => setStep(s => s - 1)}
-                className="flex items-center gap-1.5 text-stone-400 hover:text-stone-600 text-sm transition-colors"
-              >
-                <ChevronLeft size={16} /> Back
-              </button>
-            ) : (
-              <div />
-            )}
-
-            {step === 3 && (
-              <button
-                onClick={() => setStep(4)}
-                className="text-stone-400 hover:text-stone-600 text-sm transition-colors underline underline-offset-2"
-              >
-                {concern ? 'Choose a time →' : 'Skip'}
-              </button>
-            )}
+        {/* Footer — Back on every step */}
+        {step > 1 && (
+          <div className="px-6 sm:px-10 py-5 sm:py-6 border-t border-stone-100 shrink-0">
+            <button
+              onClick={() => setStep(s => s - 1)}
+              className="flex items-center gap-1.5 text-stone-400 hover:text-stone-600 text-sm transition-colors"
+            >
+              <ChevronLeft size={16} /> Back
+            </button>
           </div>
         )}
       </div>
