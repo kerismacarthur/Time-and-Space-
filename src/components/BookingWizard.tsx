@@ -280,6 +280,29 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
             </button>
           </div>
         )}
+
+        {/* Mobile-only crisis strip — hidden on md+ where left panel shows */}
+        <div className="md:hidden bg-[#f7f4f0] px-6 py-4 shrink-0 border-t border-stone-100">
+          <p className="text-xs font-medium text-stone-400 uppercase tracking-widest mb-2">
+            Need urgent support?
+          </p>
+          <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-stone-500">
+            <span>
+              <span className="font-medium text-stone-600">Lifeline </span>
+              <a href="tel:131114" className="text-[#7c9a7e]">13 11 14</a>
+              <span className="text-stone-400"> · 24/7</span>
+            </span>
+            <span>
+              <span className="font-medium text-stone-600">Beyond Blue </span>
+              <a href="tel:1300224636" className="text-[#7c9a7e]">1300 22 4636</a>
+            </span>
+            <span>
+              <span className="font-medium text-stone-600">Emergency </span>
+              <a href="tel:000" className="text-[#7c9a7e]">000</a>
+            </span>
+          </div>
+        </div>
+
         </div>{/* end right panel */}
       </div>
     </div>
