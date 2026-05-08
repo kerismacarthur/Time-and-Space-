@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { InlineWidget } from 'react-calendly'
-import { ChevronLeft, ChevronRight, X, User, Users, Monitor, MapPin } from 'lucide-react'
+import { ChevronLeft, X, User, Users, Monitor, MapPin } from 'lucide-react'
 
 // ── Update these URLs once your Calendly account is set up ──
 const CALENDLY_URLS: Record<string, string> = {
@@ -34,24 +34,16 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
   const [format, setFormat] = useState<Format | null>(null)
   const [concern, setConcern] = useState<string | null>(null)
 
-  // Lock body scroll when modal is open
   useEffect(() => {
     document.body.style.overflow = 'hidden'
     return () => { document.body.style.overflow = '' }
   }, [])
 
-  // Close on Escape key
   useEffect(() => {
     const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose() }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
   }, [onClose])
-
-  const canProceed = () => {
-    if (step === 1) return practitioner !== null
-    if (step === 2) return format !== null
-    return true // step 3 concern is optional
-  }
 
   const calendlyUrl = practitioner ? CALENDLY_URLS[practitioner] : CALENDLY_URLS.nopreference
   const prefill = {
@@ -63,13 +55,22 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
   const totalSteps = 3
 
+  // Steps 1 & 2 auto-advance on selection
+  const selectPractitioner = (p: Practitioner) => {
+    setPractitioner(p)
+    setTimeout(() => setStep(2), 200)
+  }
+
+  const selectFormat = (f: Format) => {
+    setFormat(f)
+    setTimeout(() => setStep(3), 200)
+  }
+
   return (
-    // Backdrop
     <div
       className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4"
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
-      {/* Modal */}
       <div className="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
 
         {/* Header */}
@@ -106,7 +107,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
         {/* Scrollable content */}
         <div className="overflow-y-auto flex-1">
 
-          {/* Step 1 — Practitioner */}
+          {/* Step 1 — Practitioner (auto-advances on selection) */}
           {step === 1 && (
             <div className="px-6 sm:px-10 py-8">
               <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
@@ -123,11 +124,11 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
                 ].map(opt => (
                   <button
                     key={opt.id}
-                    onClick={() => setPractitioner(opt.id as Practitioner)}
+                    onClick={() => selectPractitioner(opt.id as Practitioner)}
                     className={`text-left rounded-2xl p-5 border-2 transition-all ${
                       practitioner === opt.id
                         ? 'border-[#7c9a7e] bg-[#e8f0e9]'
-                        : 'border-stone-100 hover:border-stone-200'
+                        : 'border-stone-100 hover:border-[#7c9a7e]/40'
                     }`}
                   >
                     <opt.icon
@@ -142,7 +143,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
             </div>
           )}
 
-          {/* Step 2 — Format */}
+          {/* Step 2 — Format (auto-advances on selection) */}
           {step === 2 && (
             <div className="px-6 sm:px-10 py-8">
               <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
@@ -158,11 +159,11 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
                 ].map(opt => (
                   <button
                     key={opt.id}
-                    onClick={() => setFormat(opt.id as Format)}
+                    onClick={() => selectFormat(opt.id as Format)}
                     className={`text-left rounded-2xl p-6 border-2 transition-all ${
                       format === opt.id
                         ? 'border-[#7c9a7e] bg-[#e8f0e9]'
-                        : 'border-stone-100 hover:border-stone-200'
+                        : 'border-stone-100 hover:border-[#7c9a7e]/40'
                     }`}
                   >
                     <opt.icon
@@ -177,7 +178,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
             </div>
           )}
 
-          {/* Step 3 — Concern */}
+          {/* Step 3 — Concern (optional, has Skip) */}
           {step === 3 && (
             <div className="px-6 sm:px-10 py-8">
               <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
@@ -201,9 +202,6 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
                   </button>
                 ))}
               </div>
-              <p className="text-xs text-stone-400 mt-6">
-                You can skip this — just hit "Choose a time" to continue.
-              </p>
             </div>
           )}
 
@@ -226,7 +224,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           )}
         </div>
 
-        {/* Footer — Next / Back buttons */}
+        {/* Footer — Back always available, Skip on step 3 */}
         {step < 4 && (
           <div className="px-6 sm:px-10 py-5 sm:py-6 border-t border-stone-100 flex items-center justify-between shrink-0">
             {step > 1 ? (
@@ -239,14 +237,15 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
             ) : (
               <div />
             )}
-            <button
-              onClick={() => setStep(s => s + 1)}
-              disabled={!canProceed()}
-              className="flex items-center gap-2 bg-[#7c9a7e] text-white px-7 py-3 rounded-full hover:bg-[#5a7a5c] transition-colors disabled:opacity-40 disabled:cursor-not-allowed font-medium text-sm sm:text-base"
-            >
-              {step === 3 ? 'Choose a time' : 'Next'}
-              <ChevronRight size={16} />
-            </button>
+
+            {step === 3 && (
+              <button
+                onClick={() => setStep(4)}
+                className="text-stone-400 hover:text-stone-600 text-sm transition-colors underline underline-offset-2"
+              >
+                {concern ? 'Choose a time →' : 'Skip'}
+              </button>
+            )}
           </div>
         )}
       </div>
