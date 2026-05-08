@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { InlineWidget } from 'react-calendly'
-import { ChevronLeft, X, User, Users, Monitor, MapPin } from 'lucide-react'
+import { ChevronLeft, X, User, Users, Monitor, MapPin, Leaf } from 'lucide-react'
 
 // ── Update these URLs once your Calendly account is set up ──
 const CALENDLY_URLS: Record<string, string> = {
@@ -71,10 +71,49 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
       className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4"
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div className="bg-white w-full max-w-2xl rounded-3xl shadow-2xl overflow-hidden flex flex-col max-h-[90vh]">
+      <div className="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex max-h-[90vh]">
+
+        {/* Left panel — crisis info, always visible on md+ */}
+        <div className="hidden md:flex flex-col w-64 lg:w-72 shrink-0 bg-[#f7f4f0] p-8 justify-between">
+          <div>
+            <div className="w-10 h-10 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-6">
+              <Leaf className="text-[#7c9a7e]" size={18} />
+            </div>
+            <p className="font-serif text-stone-700 text-lg leading-snug mb-3">
+              You don't have to have it all figured out.
+            </p>
+            <p className="text-stone-400 text-xs leading-relaxed">
+              This is a free, no-pressure conversation. We're here to listen.
+            </p>
+          </div>
+
+          <div className="mt-8">
+            <p className="text-xs font-medium text-stone-500 uppercase tracking-widest mb-4">
+              Need urgent support?
+            </p>
+            <ul className="space-y-4 text-sm">
+              <li>
+                <p className="font-medium text-stone-700">Lifeline</p>
+                <a href="tel:131114" className="text-[#7c9a7e] hover:underline">13 11 14</a>
+                <span className="text-stone-400 text-xs"> · 24/7</span>
+              </li>
+              <li>
+                <p className="font-medium text-stone-700">Beyond Blue</p>
+                <a href="tel:1300224636" className="text-[#7c9a7e] hover:underline">1300 22 4636</a>
+              </li>
+              <li>
+                <p className="font-medium text-stone-700">Emergency</p>
+                <a href="tel:000" className="text-[#7c9a7e] hover:underline">000</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Right panel — wizard */}
+        <div className="flex flex-col flex-1 min-w-0">
 
         {/* Header */}
-        <div className="flex items-center justify-between px-6 sm:px-10 pt-6 sm:pt-8 pb-4 shrink-0">
+        <div className="flex items-center justify-between px-6 sm:px-8 pt-6 sm:pt-8 pb-4 shrink-0">
           <div>
             <p className="font-serif text-stone-800 text-lg sm:text-xl">
               Book a free consultation
@@ -96,7 +135,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
         {/* Progress bar */}
         {step < 4 && (
-          <div className="h-0.5 bg-stone-100 mx-6 sm:mx-10 rounded-full">
+          <div className="h-0.5 bg-stone-100 mx-6 sm:mx-8 rounded-full">
             <div
               className="h-0.5 bg-[#7c9a7e] rounded-full transition-all duration-500"
               style={{ width: `${((step - 1) / totalSteps) * 100}%` }}
@@ -109,7 +148,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
           {/* Step 1 — Practitioner (auto-advances on selection) */}
           {step === 1 && (
-            <div className="px-6 sm:px-10 py-8">
+            <div className="px-6 sm:px-8 py-8">
               <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
                 Who would you like to see?
               </h3>
@@ -145,7 +184,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
           {/* Step 2 — Format (auto-advances on selection) */}
           {step === 2 && (
-            <div className="px-6 sm:px-10 py-8">
+            <div className="px-6 sm:px-8 py-8">
               <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
                 How would you like to meet?
               </h3>
@@ -180,7 +219,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
           {/* Step 3 — Concern (optional, has Skip) */}
           {step === 3 && (
-            <div className="px-6 sm:px-10 py-8">
+            <div className="px-6 sm:px-8 py-8">
               <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
                 What brings you here?
               </h3>
@@ -214,7 +253,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           {/* Step 4 — Calendly */}
           {step === 4 && (
             <div>
-              <div className="px-6 sm:px-10 py-4">
+              <div className="px-6 sm:px-8 py-4">
                 <p className="text-stone-400 text-sm">
                   Free 15-min consultation ·{' '}
                   {format === 'inperson' ? 'In-person' : 'Telehealth'} ·{' '}
@@ -232,7 +271,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
         {/* Footer — Back on every step */}
         {step > 1 && (
-          <div className="px-6 sm:px-10 py-5 sm:py-6 border-t border-stone-100 shrink-0">
+          <div className="px-6 sm:px-8 py-5 border-t border-stone-100 shrink-0">
             <button
               onClick={() => setStep(s => s - 1)}
               className="flex items-center gap-1.5 text-stone-400 hover:text-stone-600 text-sm transition-colors"
@@ -241,6 +280,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
             </button>
           </div>
         )}
+        </div>{/* end right panel */}
       </div>
     </div>
   )
