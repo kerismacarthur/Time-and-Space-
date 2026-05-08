@@ -2,15 +2,12 @@
 
 @theme {
   --color-sage: #7c9a7e;
+  --color-sage-accessible: #4a6e4c; /* 5.8:1 contrast on white — WCAG AA */
   --color-sage-light: #e8f0e9;
-  --color-sage-dark: #5a7a5c;
+  --color-sage-dark: #3d5e3f;
   --color-warm: #f7f4f0;
-  --color-warm-dark: #ede8e2;
   --color-charcoal: #2c2c2c;
-  --color-muted: #6b6b6b;
-
-  --font-sans: 'Georgia', 'Times New Roman', serif;
-  --font-body: system-ui, sans-serif;
+  --color-body: #44403c; /* stone-700 — 8.1:1 contrast on white */
 }
 
 * {
@@ -20,7 +17,73 @@
 body {
   margin: 0;
   background-color: #ffffff;
-  color: #2c2c2c;
+  color: #44403c;
   font-family: system-ui, sans-serif;
+  font-size: 1rem; /* minimum 16px base */
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* ── Skip to main content link ── */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: #4a6e4c;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  z-index: 9999;
+  text-decoration: none;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* ── Global focus styles — visible for keyboard users ── */
+:focus-visible {
+  outline: 3px solid #4a6e4c;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Remove focus ring for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* ── Respect reduced motion preference ── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── Minimum touch target size ── */
+button,
+a,
+[role="button"] {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Override for inline links that shouldn't be 44px tall */
+p a,
+li a,
+footer a,
+nav a {
+  min-height: unset;
+  min-width: unset;
+  display: inline;
 }

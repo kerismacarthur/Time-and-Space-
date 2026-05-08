@@ -1,38 +1,38 @@
 export default function Footer() {
   return (
-    <footer className="bg-stone-800 text-stone-400 py-10 sm:py-12">
+    <footer role="contentinfo" className="bg-stone-900 text-stone-300 py-10 sm:py-12">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        {/* Mobile: stacked, md+: row */}
         <div className="flex flex-col sm:flex-row justify-between items-start gap-8 sm:gap-6">
           <div>
             <p className="font-serif text-white text-lg mb-2">Time & Space</p>
-            <p className="text-sm leading-relaxed max-w-xs">
+            <p className="text-stone-300 text-base leading-relaxed max-w-xs">
               Counselling & Psychotherapy.<br />
               In-person and telehealth, Australia-wide.
             </p>
           </div>
 
-          <div className="flex gap-12 sm:gap-10">
-            <div className="flex flex-col gap-2 text-sm">
-              <a href="#about" className="hover:text-white transition-colors">About</a>
-              <a href="#services" className="hover:text-white transition-colors">Services</a>
-              <a href="#fees" className="hover:text-white transition-colors">Fees</a>
-              <a href="#contact" className="hover:text-white transition-colors">Contact</a>
-            </div>
-            <div className="text-sm">
+          <nav aria-label="Footer navigation" className="flex gap-12 sm:gap-10">
+            <ul className="flex flex-col gap-2 text-base list-none p-0 m-0">
+              <li><a href="#about" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">About</a></li>
+              <li><a href="#services" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Services</a></li>
+              <li><a href="#fees" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Fees</a></li>
+              <li><a href="#contact" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Contact</a></li>
+            </ul>
+            <div className="text-base">
               <a
                 href="mailto:hello@timeandspacecounselling.com.au"
-                className="hover:text-white transition-colors break-all"
+                className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2 break-all"
+                aria-label="Send an email to Time and Space"
               >
                 hello@timeandspacecounselling.com.au
               </a>
             </div>
-          </div>
+          </nav>
         </div>
 
         <div className="mt-8 sm:mt-10 pt-6 border-t border-stone-700">
-          <p className="text-xs text-stone-500">
-            © {new Date().getFullYear()} Time and Space Counselling & Psychotherapy
+          <p className="text-sm text-stone-400">
+            © {new Date().getFullYear()} Time and Space Counselling & Psychotherapy. All rights reserved.
           </p>
         </div>
       </div>

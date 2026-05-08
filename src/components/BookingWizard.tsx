@@ -68,7 +68,10 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/40 backdrop-blur-sm flex items-center justify-center p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="wizard-title"
+      className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4"
       onClick={e => { if (e.target === e.currentTarget) onClose() }}
     >
       <div className="bg-white w-full max-w-4xl rounded-3xl shadow-2xl overflow-hidden flex h-[85vh] max-h-[680px]">
@@ -77,12 +80,12 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
         <div className="hidden md:flex flex-col w-64 lg:w-72 shrink-0 bg-[#f7f4f0] p-8 justify-between">
           <div>
             <div className="w-10 h-10 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-6">
-              <Leaf className="text-[#7c9a7e]" size={18} />
+              <Leaf className="text-[#4a6e4c]" size={18} />
             </div>
             <p className="font-serif text-stone-700 text-lg leading-snug mb-3">
               You don't have to have it all figured out.
             </p>
-            <p className="text-stone-400 text-xs leading-relaxed">
+            <p className="text-stone-600 text-xs leading-relaxed">
               This is a free, no-pressure conversation. We're here to listen.
             </p>
           </div>
@@ -94,16 +97,16 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
             <ul className="space-y-4 text-sm">
               <li>
                 <p className="font-medium text-stone-700">Lifeline</p>
-                <a href="tel:131114" className="text-[#7c9a7e] hover:underline">13 11 14</a>
-                <span className="text-stone-400 text-xs"> · 24/7</span>
+                <a href="tel:131114" className="text-[#4a6e4c] hover:underline">13 11 14</a>
+                <span className="text-stone-600 text-xs"> · 24/7</span>
               </li>
               <li>
                 <p className="font-medium text-stone-700">Beyond Blue</p>
-                <a href="tel:1300224636" className="text-[#7c9a7e] hover:underline">1300 22 4636</a>
+                <a href="tel:1300224636" className="text-[#4a6e4c] hover:underline">1300 22 4636</a>
               </li>
               <li>
                 <p className="font-medium text-stone-700">Emergency</p>
-                <a href="tel:000" className="text-[#7c9a7e] hover:underline">000</a>
+                <a href="tel:000" className="text-[#4a6e4c] hover:underline">000</a>
               </li>
             </ul>
           </div>
@@ -115,18 +118,18 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
         {/* Header */}
         <div className="flex items-center justify-between px-6 sm:px-8 pt-6 sm:pt-8 pb-4 shrink-0">
           <div>
-            <p className="font-serif text-stone-800 text-lg sm:text-xl">
+            <p id="wizard-title" className="font-serif text-stone-900 text-lg sm:text-xl">
               Book a free consultation
             </p>
             {step < 4 && (
-              <p className="text-stone-400 text-xs mt-0.5">
+              <p className="text-stone-600 text-xs mt-0.5">
                 Step {step} of {totalSteps}
               </p>
             )}
           </div>
           <button
             onClick={onClose}
-            className="text-stone-400 hover:text-stone-600 transition-colors p-2 -mr-2 rounded-full hover:bg-stone-100"
+            className="text-stone-600 hover:text-stone-600 transition-colors p-2 -mr-2 rounded-full hover:bg-stone-100"
             aria-label="Close"
           >
             <X size={20} />
@@ -149,10 +152,10 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           {/* Step 1 — Practitioner (auto-advances on selection) */}
           {step === 1 && (
             <div className="px-6 sm:px-8 py-8">
-              <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
+              <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-2">
                 Who would you like to see?
               </h3>
-              <p className="text-stone-400 text-sm mb-8">
+              <p className="text-stone-600 text-sm mb-8">
                 All practitioners offer a free 15-minute consultation.
               </p>
               <div className="grid sm:grid-cols-3 gap-3">
@@ -172,10 +175,10 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
                   >
                     <opt.icon
                       size={20}
-                      className={practitioner === opt.id ? 'text-[#7c9a7e]' : 'text-stone-300'}
+                      className={practitioner === opt.id ? 'text-[#4a6e4c]' : 'text-stone-300'}
                     />
-                    <p className="font-medium text-stone-800 mt-3 mb-1">{opt.label}</p>
-                    <p className="text-stone-400 text-xs leading-snug">{opt.sub}</p>
+                    <p className="font-medium text-stone-900 mt-3 mb-1">{opt.label}</p>
+                    <p className="text-stone-600 text-xs leading-snug">{opt.sub}</p>
                   </button>
                 ))}
               </div>
@@ -185,10 +188,10 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           {/* Step 2 — Format (auto-advances on selection) */}
           {step === 2 && (
             <div className="px-6 sm:px-8 py-8">
-              <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
+              <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-2">
                 How would you like to meet?
               </h3>
-              <p className="text-stone-400 text-sm mb-8">
+              <p className="text-stone-600 text-sm mb-8">
                 Both options are available — choose what feels right for you.
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
@@ -207,10 +210,10 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
                   >
                     <opt.icon
                       size={22}
-                      className={format === opt.id ? 'text-[#7c9a7e]' : 'text-stone-300'}
+                      className={format === opt.id ? 'text-[#4a6e4c]' : 'text-stone-300'}
                     />
-                    <p className="font-medium text-stone-800 mt-4 mb-1">{opt.label}</p>
-                    <p className="text-stone-400 text-sm">{opt.sub}</p>
+                    <p className="font-medium text-stone-900 mt-4 mb-1">{opt.label}</p>
+                    <p className="text-stone-600 text-sm">{opt.sub}</p>
                   </button>
                 ))}
               </div>
@@ -220,10 +223,10 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           {/* Step 3 — Concern (optional, has Skip) */}
           {step === 3 && (
             <div className="px-6 sm:px-8 py-8">
-              <h3 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2">
+              <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-2">
                 What brings you here?
               </h3>
-              <p className="text-stone-400 text-sm mb-8">
+              <p className="text-stone-600 text-sm mb-8">
                 Optional — just helps us understand a little before we meet.
               </p>
               <div className="flex flex-wrap gap-2">
@@ -243,7 +246,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
               </div>
               <button
                 onClick={() => setStep(4)}
-                className="mt-8 text-stone-400 hover:text-stone-600 text-sm transition-colors underline underline-offset-2"
+                className="mt-8 text-stone-600 hover:text-stone-600 text-sm transition-colors underline underline-offset-2"
               >
                 Skip
               </button>
@@ -254,7 +257,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           {step === 4 && (
             <div>
               <div className="px-6 sm:px-8 py-4">
-                <p className="text-stone-400 text-sm">
+                <p className="text-stone-600 text-sm">
                   Free 15-min consultation ·{' '}
                   {format === 'inperson' ? 'In-person' : 'Telehealth'} ·{' '}
                   {practitioner === 'keris' ? 'Keris' : practitioner === 'pia' ? 'Pia' : 'Any practitioner'}
@@ -274,7 +277,7 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
           <div className="px-6 sm:px-8 py-5 border-t border-stone-100 shrink-0">
             <button
               onClick={() => setStep(s => s - 1)}
-              className="flex items-center gap-1.5 text-stone-400 hover:text-stone-600 text-sm transition-colors"
+              className="flex items-center gap-1.5 text-stone-600 hover:text-stone-600 text-sm transition-colors"
             >
               <ChevronLeft size={16} /> Back
             </button>
@@ -283,22 +286,22 @@ export default function BookingWizard({ onClose }: BookingWizardProps) {
 
         {/* Mobile-only crisis strip — hidden on md+ where left panel shows */}
         <div className="md:hidden bg-[#f7f4f0] px-6 py-4 shrink-0 border-t border-stone-100">
-          <p className="text-xs font-medium text-stone-400 uppercase tracking-widest mb-2">
+          <p className="text-xs font-medium text-stone-600 uppercase tracking-widest mb-2">
             Need urgent support?
           </p>
           <div className="flex flex-wrap gap-x-5 gap-y-1 text-xs text-stone-500">
             <span>
               <span className="font-medium text-stone-600">Lifeline </span>
-              <a href="tel:131114" className="text-[#7c9a7e]">13 11 14</a>
-              <span className="text-stone-400"> · 24/7</span>
+              <a href="tel:131114" className="text-[#4a6e4c]">13 11 14</a>
+              <span className="text-stone-600"> · 24/7</span>
             </span>
             <span>
               <span className="font-medium text-stone-600">Beyond Blue </span>
-              <a href="tel:1300224636" className="text-[#7c9a7e]">1300 22 4636</a>
+              <a href="tel:1300224636" className="text-[#4a6e4c]">1300 22 4636</a>
             </span>
             <span>
               <span className="font-medium text-stone-600">Emergency </span>
-              <a href="tel:000" className="text-[#7c9a7e]">000</a>
+              <a href="tel:000" className="text-[#4a6e4c]">000</a>
             </span>
           </div>
         </div>

@@ -14,15 +14,23 @@ function App() {
 
   return (
     <>
+      {/* Skip to main content — keyboard accessibility */}
+      <a href="#main-content" className="skip-link">
+        Skip to main content
+      </a>
+
       <Navbar onBookNow={() => setWizardOpen(true)} />
-      <main>
-        <Hero />
+
+      <main id="main-content">
+        <Hero onBookNow={() => setWizardOpen(true)} />
         <About />
         <Services />
         <Fees />
         <Contact onBookNow={() => setWizardOpen(true)} />
       </main>
+
       <Footer />
+
       {wizardOpen && <BookingWizard onClose={() => setWizardOpen(false)} />}
     </>
   )
