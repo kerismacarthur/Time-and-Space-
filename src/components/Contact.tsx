@@ -1,6 +1,10 @@
+import { useState } from 'react'
+import { CalendarDays } from 'lucide-react'
 import BookingWizard from './BookingWizard'
 
 export default function Contact() {
+  const [wizardOpen, setWizardOpen] = useState(false)
+
   return (
     <section id="contact" className="py-16 sm:py-20 md:py-24 bg-[#f7f4f0]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
@@ -10,20 +14,35 @@ export default function Contact() {
         <h2 className="font-serif text-3xl sm:text-4xl text-stone-800 mb-4 sm:mb-6 leading-snug">
           Ready to take the first step?
         </h2>
-        <p className="text-stone-500 text-base sm:text-lg leading-relaxed mb-10 sm:mb-12 max-w-2xl">
+        <p className="text-stone-500 text-base sm:text-lg leading-relaxed mb-10 max-w-2xl">
           Your first consultation is completely free — 15 minutes to ask questions,
-          get a feel for how we work, and see if we're the right fit for you.
-          No commitment required.
+          get a feel for how we work, and see if we're the right fit. No commitment required.
         </p>
 
-        {/* Wizard */}
-        <div className="mb-10 sm:mb-14">
-          <BookingWizard />
+        {/* CTA card */}
+        <div className="bg-white rounded-2xl sm:rounded-3xl p-8 sm:p-12 border border-stone-100 mb-8 max-w-xl">
+          <div className="w-12 h-12 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-6">
+            <CalendarDays className="text-[#7c9a7e]" size={22} />
+          </div>
+          <h3 className="font-serif text-xl sm:text-2xl text-stone-800 mb-2">
+            Free 15-minute consultation
+          </h3>
+          <p className="text-stone-400 text-sm leading-relaxed mb-8">
+            Choose your practitioner, how you'd like to meet, and pick a time that
+            works for you — all in a few easy steps.
+          </p>
+          <button
+            onClick={() => setWizardOpen(true)}
+            className="flex items-center gap-2 bg-[#7c9a7e] text-white px-8 py-3.5 rounded-full hover:bg-[#5a7a5c] transition-colors font-medium"
+          >
+            Book now
+            <CalendarDays size={16} />
+          </button>
         </div>
 
         {/* Crisis support */}
         <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-stone-100 max-w-lg">
-          <h3 className="font-medium text-stone-700 mb-2 sm:mb-3 text-sm sm:text-base">
+          <h3 className="font-medium text-stone-700 mb-2 text-sm sm:text-base">
             Need urgent support?
           </h3>
           <p className="text-stone-500 text-sm leading-relaxed mb-3">
@@ -45,6 +64,9 @@ export default function Contact() {
           </ul>
         </div>
       </div>
+
+      {/* Full-screen modal */}
+      {wizardOpen && <BookingWizard onClose={() => setWizardOpen(false)} />}
     </section>
   )
 }
