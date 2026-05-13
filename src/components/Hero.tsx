@@ -17,9 +17,11 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
             <h1 id="hero-heading" className="font-serif text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-stone-900 leading-tight mb-4 sm:mb-6">
               Finding your way back to yourself
             </h1>
+            <p className="text-stone-700 text-lg leading-relaxed mb-4">
+              Sometimes life's twists and turns take you completely by surprise. At others, we find ourselves so familiar with our stories, we're exhausted and desperately needing to make sense of it all.
+            </p>
             <p className="text-stone-700 text-lg leading-relaxed mb-6 sm:mb-8">
-              Time and Space offers a warm, integrative approach to therapy — for
-              individuals ready to explore what's getting in the way of living well.
+              Or perhaps fear of the future is getting in the way of living in the present moment. Maybe it's all of the above, the overlaps are impacting your sense of self and capacity to connect with the people in your life.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
