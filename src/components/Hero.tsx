@@ -8,7 +8,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
       className="min-h-screen flex items-center bg-[#f7f4f0] pt-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 w-full">
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
             {/* Decorative label — not a heading, hidden from screen readers */}
             <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-4 sm:mb-6" aria-hidden="true">
