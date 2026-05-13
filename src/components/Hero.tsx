@@ -8,15 +8,16 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
       className="min-h-screen flex items-center bg-[#f7f4f0] pt-16"
     >
       <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 w-full">
+        {/* Decorative label — not a heading, hidden from screen readers */}
+        <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-4 sm:mb-6" aria-hidden="true">
+          Counselling & Psychotherapy
+        </p>
+        <h1 id="hero-heading" className="font-serif text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-stone-900 leading-tight mb-8 sm:mb-10 max-w-xl">
+          Finding your way back to yourself
+        </h1>
+
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
-            {/* Decorative label — not a heading, hidden from screen readers */}
-            <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-4 sm:mb-6" aria-hidden="true">
-              Counselling & Psychotherapy
-            </p>
-            <h1 id="hero-heading" className="font-serif text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-stone-900 leading-tight mb-4 sm:mb-6">
-              Finding your way back to yourself
-            </h1>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
               Sometimes life's twists and turns take you completely by surprise. At others, we find ourselves so familiar with our stories, we're exhausted and desperately needing to make sense of it all.
             </p>
