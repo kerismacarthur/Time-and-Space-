@@ -62,8 +62,17 @@ export default function About() {
             <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
               Counsellor & Psychotherapist
             </p>
+            <p className="text-stone-700 text-base leading-relaxed mb-4">
+              Pia is a warm and thoughtful counsellor who works with individuals and couples to navigate stress, anxiety, relationship challenges, identity, and life transitions. Her approach is collaborative, grounded, and deeply relational, creating a space where clients feel safe to reflect, gain insight, and make meaningful change.
+            </p>
+            <p className="text-stone-700 text-base leading-relaxed mb-4">
+              With a background in drug and alcohol counselling and suicide prevention, Pia brings a calm, non-judgemental presence to complex experiences and works from a harm-minimisation perspective. She takes a holistic view of wellbeing, recognising the impact of relationships, family dynamics, culture, work, sleep, movement, and daily life on emotional health.
+            </p>
+            <p className="text-stone-700 text-base leading-relaxed mb-4">
+              Having grown up in Europe, Pia brings a cultural lens to her work and is particularly interested in how people develop a sense of self, belonging, and connection. She supports clients in building emotional awareness, self-acceptance, and healthier ways of relating to themselves and others.
+            </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              Pia's bio coming soon. We're putting the finishing touches on her profile.
+              In her work with couples, Pia helps partners shift out of blame and disconnection and toward clearer communication, deeper understanding, and a sense of being on the same team.
             </p>
           </article>
         </div>
