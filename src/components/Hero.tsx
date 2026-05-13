@@ -13,7 +13,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
           Counselling & Psychotherapy
         </p>
         <h1 id="hero-heading" className="font-serif text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-stone-900 leading-tight mb-8 sm:mb-10 whitespace-nowrap">
-          Need a hand finding your way
+          Need a hand finding your way?
         </h1>
 
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
