@@ -51,8 +51,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
                 <Leaf className="text-[#4a6e4c]" size={26} />
               </div>
               <blockquote className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed mb-6">
-                "Whether you're navigating addiction, working through anxiety, or
-                simply feeling stuck — we're here to offer the time and space you need."
+                "In our practice, we prioritise collaboration and curiosity. We believe that meaningful change — whether in outlook, understanding, or circumstance — happens when people feel safe and supported."
               </blockquote>
               <div className="flex items-center gap-3">
                 <div className="w-8 h-px bg-[#4a6e4c]" />
