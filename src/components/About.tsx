@@ -73,7 +73,7 @@ export default function About() {
 
         {/* Approach */}
         <div className="mt-12 sm:mt-16 border-t border-stone-200 pt-10 sm:pt-16">
-          <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-4 sm:mb-6">Our approach</h3>
+          <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-2 sm:mb-3">How we work.</h3>
           <p className="text-stone-700 text-lg leading-relaxed max-w-2xl mb-4">
             We take an integrative approach, drawing on person-centred, trauma-informed, cognitive-behavioural, and mindfulness-based practices to tailor our work to each person's unique needs.
           </p>
