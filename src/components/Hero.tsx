@@ -47,7 +47,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
           {/* Decorative card — hidden from screen readers */}
           <div className="hidden md:block" aria-hidden="true">
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-stone-200">
-              <blockquote className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed mb-3">
+              <blockquote className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed mb-1">
                 "We prioritise collaboration and curiosity and believe that meaningful change — whether in outlook, understanding, or circumstance — happens when people feel safe and supported."
               </blockquote>
               <div className="flex items-center justify-between">
