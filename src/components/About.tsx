@@ -18,7 +18,7 @@ export default function About() {
             </p>
           </div>
           <div className="bg-[#f7f4f0] rounded-2xl p-6 sm:p-8">
-            <p className="text-stone-700 text-lg leading-relaxed">
+            <p className="text-stone-700 text-lg leading-relaxed italic">
               Both Pia and Keris are clinically registered counsellors with the Psychotherapy and Counselling Federation of Australia (PACFA). If you'd like to learn more about PACFA's Code of Ethics, please{' '}
               <a href="https://pacfa.org.au/portal/portal/Prac-Res/code-of-ethics.aspx?hkey=ca0802b6-6f61-4252-bed3-e3fb19bcd6bb" target="_blank" rel="noopener noreferrer" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">click here</a>.
             </p>
