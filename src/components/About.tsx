@@ -11,14 +11,10 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
           <div>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
-              Time and Space was born from a shared conviction: that everyone deserves
-              access to quality counselling delivered with warmth, skill, and genuine care.
+              We take an integrative approach, drawing on person-centred, trauma-informed, cognitive-behavioural, and mindfulness-based practices to tailor our work to each person's unique needs.
             </p>
             <p className="text-stone-700 text-lg leading-relaxed">
-              Keris and Pia met through their work in the counselling field and discovered
-              they shared not just a professional philosophy, but a vision for the kind of
-              practice they wanted to build — one that felt personal, unhurried, and
-              deeply human.
+              We also know that your needs and perspective may shift along the way. Building a relationship where you feel confident to ask questions from the outset and share feedback along the way, is central to how we work.
             </p>
           </div>
           <blockquote className="bg-[#f7f4f0] rounded-2xl p-6 sm:p-8">
