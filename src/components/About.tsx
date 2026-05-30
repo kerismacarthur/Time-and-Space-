@@ -74,11 +74,11 @@ export default function About() {
         {/* Approach */}
         <div className="mt-12 sm:mt-16 border-t border-stone-200 pt-10 sm:pt-16">
           <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-4 sm:mb-6">Our approach</h3>
+          <p className="text-stone-700 text-lg leading-relaxed max-w-2xl mb-4">
+            We take an integrative approach, drawing on person-centred, trauma-informed, cognitive-behavioural, and mindfulness-based practices to tailor our work to each person's unique needs.
+          </p>
           <p className="text-stone-700 text-lg leading-relaxed max-w-2xl">
-            We take an integrative approach to therapy — drawing on person-centred therapy,
-            trauma-informed practice, cognitive-behavioural approaches, and mindfulness to
-            tailor our work to each client's unique needs, goals, and history. Meaningful
-            change happens within a safe, trusting relationship.
+            We also know that your needs and perspective may shift along the way. Building a relationship where you feel confident to ask questions from the outset and share feedback along the way, is central to how we work.
           </p>
         </div>
       </div>
