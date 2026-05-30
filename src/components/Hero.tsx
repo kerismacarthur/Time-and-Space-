@@ -47,15 +47,17 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
           {/* Decorative card — hidden from screen readers */}
           <div className="hidden md:block" aria-hidden="true">
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-stone-200">
-              <div className="w-14 h-14 lg:w-16 lg:h-16 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-6">
-                <Leaf className="text-[#4a6e4c]" size={26} />
-              </div>
               <blockquote className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed mb-6">
                 "In our practice, we prioritise collaboration and curiosity. We believe that meaningful change — whether in outlook, understanding, or circumstance — happens when people feel safe and supported."
               </blockquote>
-              <div className="flex items-center gap-3">
-                <div className="w-8 h-px bg-[#4a6e4c]" />
-                <span className="text-sm text-stone-600">Keris & Pia</span>
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-px bg-[#4a6e4c]" />
+                  <span className="text-sm text-stone-600">Keris & Pia</span>
+                </div>
+                <div className="w-14 h-14 lg:w-16 lg:h-16 bg-[#e8f0e9] rounded-full flex items-center justify-center">
+                  <Leaf className="text-[#4a6e4c]" size={26} />
+                </div>
               </div>
             </div>
           </div>
