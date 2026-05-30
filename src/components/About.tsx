@@ -4,13 +4,6 @@ export default function About() {
   return (
     <section id="about" aria-labelledby="about-heading" className="py-16 sm:py-20 md:py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-3 sm:mb-4" aria-hidden="true">
-          About us
-        </p>
-        <h2 id="about-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-10 sm:mb-16 max-w-xl leading-snug">
-          Two counsellors. One shared belief.
-        </h2>
-
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
           <div>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
