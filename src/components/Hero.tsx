@@ -19,7 +19,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
         <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
-              Sometimes life's twists and turns take you completely by surprise. At others, we find ourselves so familiar with our stories, we're exhausted and desperately needing to make sense of it all.
+              Sometimes life's twists and turns take you completely by surprise. In other moments, we find ourselves so familiar with our stories, we're exhausted and desperately needing to make sense of it all.
             </p>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
               Or perhaps fear of the future is pulling you away from the present. Maybe it's all of the above — quietly wearing on your sense of self and impacting your connections with the people around you.
