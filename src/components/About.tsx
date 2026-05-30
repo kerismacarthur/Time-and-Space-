@@ -17,12 +17,12 @@ export default function About() {
               We also know that your needs and perspective may shift along the way. Building a relationship where you feel confident to ask questions from the outset and share feedback along the way, is central to how we work.
             </p>
           </div>
-          <blockquote className="bg-[#f7f4f0] rounded-2xl p-6 sm:p-8">
-            <p className="font-serif text-xl text-stone-800 leading-relaxed italic">
-              "Our role is not to fix you — it's to walk alongside you as you find
-              your own way."
+          <div className="bg-[#f7f4f0] rounded-2xl p-6 sm:p-8">
+            <p className="text-stone-700 text-lg leading-relaxed">
+              Both Pia and Keris are clinically registered counsellors with the Psychotherapy and Counselling Federation of Australia (PACFA). If you'd like to learn more about PACFA's Code of Ethics, please{' '}
+              <a href="https://www.pacfa.org.au/ethics/" target="_blank" rel="noopener noreferrer" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">click here</a>.
             </p>
-          </blockquote>
+          </div>
         </div>
 
         {/* Team */}
