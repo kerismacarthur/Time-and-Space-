@@ -5,7 +5,7 @@ export default function About() {
     <section id="about" aria-labelledby="about-heading" className="py-16 sm:py-20 md:py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 id="about-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-10 sm:mb-16 max-w-xl leading-snug">
-          Our approach
+          Our approach.
         </h2>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
