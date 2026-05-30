@@ -22,7 +22,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
               Sometimes life's twists and turns take you completely by surprise. At others, we find ourselves so familiar with our stories, we're exhausted and desperately needing to make sense of it all.
             </p>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
-              Or perhaps fear of the future is getting in the way of living in the present moment. Maybe it's all of the above, and the overlaps are impacting your sense of self and capacity to connect with the people in your life.
+              Or perhaps fear of the future is pulling you away from the present. Maybe it's all of the above — quietly wearing on your sense of self and impacting your connections with the people around you.
             </p>
             <p className="text-stone-700 text-lg leading-relaxed mb-6 sm:mb-8">
               If you're curious about what working with us looks like, we'd love to hear from you.
