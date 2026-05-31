@@ -60,7 +60,7 @@ export default function Services() {
     <section aria-labelledby="crisis-heading" className="py-16 sm:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <div className="">
-          <h3 id="crisis-heading" className="font-serif text-2xl sm:text-3xl text-stone-900 mb-3">Need urgent support?</h3>
+          <h3 id="crisis-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-3">Need urgent support?</h3>
           <p className="text-stone-700 text-lg leading-relaxed mb-6 max-w-2xl">
             If you are in crisis at this time, please consider contacting one of the following crisis support lines or attend your local hospital's emergency department.
           </p>
