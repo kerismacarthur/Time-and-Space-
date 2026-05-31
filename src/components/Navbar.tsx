@@ -34,13 +34,13 @@ export default function Navbar({ onBookNow }: { onBookNow: () => void }) {
               {link.label}
             </a>
           ))}
-          <button
-            onClick={onBookNow}
+          <a
+            href="mailto:hello@timeandspace-counselling.com.au"
             className="text-sm bg-[#4a6e4c] text-white px-5 py-2 rounded-full hover:bg-[#3d5e3f] transition-colors whitespace-nowrap font-medium"
-            aria-label="Open booking form to book a free consultation"
+            aria-label="Get in touch via email"
           >
-            Book a free consult
-          </button>
+            Get in touch
+          </a>
         </nav>
 
         {/* Mobile menu button */}
@@ -72,13 +72,14 @@ export default function Navbar({ onBookNow }: { onBookNow: () => void }) {
             {link.label}
           </a>
         ))}
-        <button
-          onClick={() => { setOpen(false); onBookNow() }}
+        <a
+          href="mailto:hello@timeandspace-counselling.com.au"
+          onClick={() => setOpen(false)}
           className="bg-[#4a6e4c] text-white px-6 py-3 rounded-full text-center hover:bg-[#3d5e3f] transition-colors mt-2 text-base font-medium"
-          aria-label="Open booking form to book a free consultation"
+          aria-label="Get in touch via email"
         >
-          Book a free consult
-        </button>
+          Get in touch
+        </a>
       </div>
     </header>
   )
