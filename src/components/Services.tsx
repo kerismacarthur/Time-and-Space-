@@ -68,31 +68,31 @@ export default function Services() {
             <ul className="space-y-3 text-stone-700 text-base">
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>Suicide Call Back Service</strong> — 24/7 counselling: <a href="tel:1300659467" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1300 659 467</a></span>
+                <span><strong>Suicide Call Back Service</strong>:24/7 counselling: <a href="tel:1300659467" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1300 659 467</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>1800RESPECT</strong> — domestic, family & sexual violence support: <a href="tel:1800737732" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1800 737 732</a></span>
+                <span><strong>1800RESPECT</strong>:domestic, family & sexual violence support: <a href="tel:1800737732" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1800 737 732</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>Lifeline</strong> — 24/7 crisis support: <a href="tel:131114" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">13 11 14</a></span>
+                <span><strong>Lifeline</strong>:24/7 crisis support: <a href="tel:131114" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">13 11 14</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>13YARN</strong> — 24/7 crisis support for First Nations people:<br /><a href="tel:139276" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">13 92 76</a></span>
+                <span><strong>13YARN</strong>:24/7 crisis support for First Nations people:<br /><a href="tel:139276" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">13 92 76</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>Kids Helpline</strong> — support for ages 5–25: <a href="tel:1800551800" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1800 55 1800</a></span>
+                <span><strong>Kids Helpline</strong>:support for ages 5–25: <a href="tel:1800551800" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1800 55 1800</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>MensLine Australia</strong> — support for men: <a href="tel:1300789978" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1300 78 99 78</a></span>
+                <span><strong>MensLine Australia</strong>:support for men: <a href="tel:1300789978" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1300 78 99 78</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
-                <span><strong>Beyond Blue</strong> — anxiety & depression support: <a href="tel:1300224636" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1300 22 4636</a></span>
+                <span><strong>Beyond Blue</strong>:anxiety & depression support: <a href="tel:1300224636" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1300 22 4636</a></span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
