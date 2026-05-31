@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="#about"
-                className="border-2 border-stone-400 text-stone-700 px-8 py-4 rounded-full text-center hover:border-stone-600 hover:text-stone-900 transition-colors text-base font-medium"
+                className="bg-[#4a6e4c] text-white px-8 py-4 rounded-full text-center hover:bg-[#3d5e3f] transition-colors text-base font-medium"
               >
                 Learn more
               </a>
