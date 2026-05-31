@@ -11,19 +11,19 @@ export default function Hero() {
         <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-4 sm:mb-6" aria-hidden="true">
           Counselling & Psychotherapy
         </p>
-        <h1 id="hero-heading" className="font-serif text-4xl sm:text-5xl md:text-5xl lg:text-6xl text-stone-900 leading-tight mb-8 sm:mb-10 whitespace-nowrap">
+        <h1 id="hero-heading" className="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-stone-900 leading-tight mb-6 sm:mb-10">
           Need a hand finding your way?
         </h1>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 items-start">
+        <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-start">
           <div>
-            <p className="text-stone-700 text-lg leading-relaxed mb-4">
+            <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-4">
               Sometimes life's twists and turns take you completely by surprise. In other moments, we find ourselves so familiar with our stories, we're exhausted and desperately needing to make sense of it all.
             </p>
-            <p className="text-stone-700 text-lg leading-relaxed mb-4">
+            <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-4">
               Or perhaps fear of the future is pulling you away from the present. Maybe it's all of the above — quietly wearing on your sense of self and impacting your connections with the people around you.
             </p>
-            <p className="text-stone-700 text-lg leading-relaxed mb-6 sm:mb-8">
+            <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8">
               No matter what's prompting you to explore counselling, we believe seeking support is courageous; a gift we give to ourselves. If you're curious about what working with us looks like, we'd love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">

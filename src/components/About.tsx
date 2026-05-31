@@ -35,7 +35,7 @@ export default function About() {
 
         {/* Team */}
         <div className="grid sm:grid-cols-2 gap-5 sm:gap-8">
-          <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-6 sm:p-8">
+          <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
             <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Keris</h3>
             <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
               Counsellor & Psychotherapist
@@ -52,7 +52,7 @@ export default function About() {
             </p>
           </article>
 
-          <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-6 sm:p-8">
+          <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
             <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Pia</h3>
             <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
               Counsellor & Psychotherapist

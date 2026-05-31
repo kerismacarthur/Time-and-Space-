@@ -9,7 +9,7 @@ export default function Fees() {
           How much will this cost?
         </h2>
 <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
-          <div className="bg-white rounded-2xl sm:rounded-3xl p-7 sm:p-10">
+          <div className="bg-white rounded-2xl sm:rounded-3xl p-5 sm:p-7 lg:p-10">
             <div className="mb-4">
               <p className="text-stone-600 text-sm mb-1">Individual counselling</p>
               <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and forty dollars per session">$140</p>
@@ -39,7 +39,7 @@ export default function Fees() {
           </div>
 
           <div className="flex flex-col gap-4 sm:gap-6">
-            <div className="bg-[#e8f0e9] rounded-xl sm:rounded-2xl p-6 sm:p-8">
+            <div className="bg-[#e8f0e9] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
               <h3 className="font-semibold text-stone-900 mb-2 text-base">Medicare & rebates</h3>
               <p className="text-stone-700 leading-relaxed text-base">
                 As counsellors and psychotherapists, we are not currently eligible to
@@ -48,7 +48,7 @@ export default function Fees() {
                 counselling sessions.
               </p>
             </div>
-            <div className="bg-[#e8f0e9] rounded-xl sm:rounded-2xl p-6 sm:p-8">
+            <div className="bg-[#e8f0e9] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
               <h3 className="font-semibold text-stone-900 mb-2 text-base">Cancellation policy</h3>
               <p className="text-stone-700 leading-relaxed text-base">
                 We ask for 48 hours' notice for cancellations or rescheduling. We understand life happens, but late cancellations will incur a fee so please let us know as early as you can.

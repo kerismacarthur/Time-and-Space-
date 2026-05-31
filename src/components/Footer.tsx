@@ -11,20 +11,19 @@ export default function Footer() {
             </p>
           </div>
 
-          <nav aria-label="Footer navigation" className="flex gap-12 sm:gap-10">
-            <ul className="flex flex-col gap-2 text-base list-none p-0 m-0">
+          <nav aria-label="Footer navigation" className="flex gap-6 sm:gap-10">
+            <ul className="flex flex-col gap-2 text-sm sm:text-base list-none p-0 m-0">
               <li><a href="#about" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">About</a></li>
               <li><a href="#services" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Services</a></li>
               <li><a href="#fees" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Fees</a></li>
-              <li><a href="#contact" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Contact</a></li>
             </ul>
-            <div className="text-base">
+            <div className="text-sm sm:text-base">
               <a
-                href="mailto:hello@timeandspacecounselling.com.au"
+                href="mailto:hello@timeandspace-counselling.com.au"
                 className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2 break-all"
                 aria-label="Send an email to Time and Space"
               >
-                hello@timeandspacecounselling.com.au
+                hello@timeandspace-counselling.com.au
               </a>
             </div>
           </nav>

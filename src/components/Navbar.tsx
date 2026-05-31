@@ -17,19 +17,19 @@ export default function Navbar() {
           Time & Space
         </a>
 
-        <nav aria-label="Main navigation" className="flex items-center gap-4 sm:gap-6 lg:gap-8">
+        <nav aria-label="Main navigation" className="flex items-center gap-2 sm:gap-4 lg:gap-8">
           {links.map(link => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-stone-600 hover:text-stone-900 transition-colors underline-offset-4 hover:underline"
+              className="text-xs sm:text-sm text-stone-600 hover:text-stone-900 transition-colors underline-offset-4 hover:underline"
             >
               {link.label}
             </a>
           ))}
           <a
             href="mailto:hello@timeandspace-counselling.com.au"
-            className="text-sm bg-[#4a6e4c] text-white px-5 py-2 rounded-full hover:bg-[#3d5e3f] transition-colors whitespace-nowrap font-medium"
+            className="text-xs sm:text-sm bg-[#4a6e4c] text-white px-3 sm:px-5 py-2 rounded-full hover:bg-[#3d5e3f] transition-colors whitespace-nowrap font-medium"
             aria-label="Contact us via email"
           >
             Contact us
