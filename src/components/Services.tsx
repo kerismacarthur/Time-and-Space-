@@ -18,7 +18,7 @@ const services: { icon: LucideIcon; label: string }[] = [
 
 export default function Services() {
   return (
-    <section id="services" aria-labelledby="services-heading" className="py-16 sm:py-20 md:py-24 bg-[#f7f4f0]">
+    <section id="services" aria-labelledby="services-heading" className="py-16 sm:py-20 md:py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 id="services-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 sm:mb-6 max-w-xl leading-snug">
           How we help.
@@ -56,12 +56,12 @@ export default function Services() {
         <p className="text-stone-700 text-lg leading-relaxed max-w-2xl mb-4">
           Please note, we are not able to diagnose or treat mental disorders and as such, are not able to provide any documentation to that effect. If you require a licensed mental health professional, please contact your GP to organise a referral.
         </p>
-        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-stone-200 mt-6">
+        <div className="mt-6">
           <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-3">Need urgent support?</h3>
-          <p className="text-stone-700 text-lg leading-relaxed mb-6">
+          <p className="text-stone-700 text-lg leading-relaxed mb-6 max-w-2xl">
             If you are in crisis at this time, please consider contacting one of the following crisis support lines or attend your local hospital's emergency department.
           </p>
-          <ul className="space-y-3 text-stone-700 text-base">
+          <ul className="space-y-3 text-stone-700 text-base max-w-2xl">
             <li className="flex items-start gap-3">
               <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
               <span><strong>Lifeline</strong> — 24/7 crisis support: <a href="tel:131114" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">13 11 14</a></span>
