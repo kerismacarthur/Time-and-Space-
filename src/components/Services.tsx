@@ -48,10 +48,16 @@ export default function Services() {
         <p className="text-stone-700 text-lg leading-relaxed mb-4 max-w-2xl">
           Additionally, we understand that not everyone wants to engage in person; both Pia and Keris are adept at providing counselling via telehealth and online.
         </p>
-        <p className="text-stone-700 text-lg leading-relaxed max-w-2xl">
+        <p className="text-stone-700 text-lg leading-relaxed max-w-2xl mb-4">
           If you'd like to find out more, please contact us via{' '}
           <a href="mailto:hello@timeandspace-counselling.com.au" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">hello@timeandspace-counselling.com.au</a>{' '}
           and we can organise a time to chat about how we can support you best.
+        </p>
+        <p className="text-stone-700 text-lg leading-relaxed max-w-2xl mb-4">
+          Please note, we are not able to diagnose or treat mental disorders and as such, are not able to provide any documentation to that effect. If you require a licensed mental health professional, please contact your GP to organise a referral.
+        </p>
+        <p className="text-stone-700 text-lg leading-relaxed max-w-2xl">
+          If you are in crisis at this time, please consider contacting one of the following crisis support lines or attend your local hospital's emergency department.
         </p>
       </div>
     </section>
