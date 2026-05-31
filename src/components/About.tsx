@@ -19,10 +19,10 @@ export default function About() {
           </div>
           <div className="bg-[#f7f4f0] rounded-2xl p-6 sm:p-8">
             <p className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed italic mb-4">
-              Pia and Keris first met at Western Sydney University, both completing a Master of Counselling and Psychotherapy in 2023.
+              Pia and Keris first met at Western Sydney University, each completing a Master of Counselling and Psychotherapy in 2023.
             </p>
             <p className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed italic">
-              Both Pia and Keris are clinically registered counsellors with the Psychotherapy and Counselling Federation of Australia (PACFA). If you'd like to learn more about PACFA's Code of Ethics, please{' '}
+              Both are now clinically registered counsellors with the Psychotherapy and Counselling Federation of Australia (PACFA). If you'd like to learn more about PACFA's Code of Ethics, please{' '}
               <a href="https://pacfa.org.au/portal/portal/Prac-Res/code-of-ethics.aspx?hkey=ca0802b6-6f61-4252-bed3-e3fb19bcd6bb" target="_blank" rel="noopener noreferrer" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">click here</a>.
             </p>
           </div>
