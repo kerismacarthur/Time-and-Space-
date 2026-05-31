@@ -18,7 +18,8 @@ const services: { icon: LucideIcon; label: string }[] = [
 
 export default function Services() {
   return (
-    <section id="services" aria-labelledby="services-heading" className="py-16 sm:py-20 md:py-24 bg-white">
+    <>
+    <section id="services" aria-labelledby="services-heading" className="py-16 sm:py-20 md:py-24 bg-[#f7f4f0]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 id="services-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 sm:mb-6 max-w-xl leading-snug">
           How we help.
@@ -53,8 +54,13 @@ export default function Services() {
           <a href="mailto:hello@timeandspace-counselling.com.au" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">hello@timeandspace-counselling.com.au</a>{' '}
           and we can organise a time to chat about how we can support you best.
         </p>
-        <div className="mt-6">
-          <h3 className="font-serif text-2xl sm:text-3xl text-stone-900 mb-3">Need urgent support?</h3>
+      </div>
+    </section>
+
+    <section aria-labelledby="crisis-heading" className="py-16 sm:py-20 bg-white">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <div className="">
+          <h3 id="crisis-heading" className="font-serif text-2xl sm:text-3xl text-stone-900 mb-3">Need urgent support?</h3>
           <p className="text-stone-700 text-lg leading-relaxed mb-6 max-w-2xl">
             If you are in crisis at this time, please consider contacting one of the following crisis support lines or attend your local hospital's emergency department.
           </p>
@@ -102,5 +108,7 @@ export default function Services() {
         </div>
       </div>
     </section>
+    </>
   )
 }
+
