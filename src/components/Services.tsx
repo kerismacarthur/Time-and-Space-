@@ -46,7 +46,7 @@ export default function Services() {
           We offer 50 minute individual sessions, with the option of 90 minute sessions by arrangement. The frequency is determined by you, and we recognise that the rhythm of your needs may change over time. You just let us know what feels right for you, as it becomes clear.
         </p>
         <p className="text-stone-700 text-lg leading-relaxed mb-4 max-w-2xl">
-          Additionally, we understand that not everyone wants to engage in person, and both Pia and Keris are adept at providing counselling via telehealth and online.
+          Additionally, we understand that not everyone wants to engage in person; both Pia and Keris are adept at providing counselling via telehealth and online.
         </p>
         <p className="text-stone-700 text-lg leading-relaxed max-w-2xl">
           If you'd like to find out more, please contact us via{' '}
