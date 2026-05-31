@@ -31,10 +31,7 @@ export default function About() {
             <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-5 sm:mb-6" aria-hidden="true">
               <Sprout className="text-[#4a6e4c]" size={22} />
             </div>
-            <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Keris</h3>
-            <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
-              Counsellor & Psychotherapist, M.Couns
-            </p>
+            <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-3 sm:mb-4">Keris</h3>
             <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
               Keris brings specialist experience working with drug and alcohol use through
               her work at Lives Lived Well, where she has supported individuals through
