@@ -11,7 +11,7 @@ const services: { icon: LucideIcon; label: string }[] = [
   { icon: Compass, label: 'Life transitions & grief' },
   { icon: Flame, label: 'Stress & burnout' },
   { icon: HeartHandshake, label: 'Relationship difficulties' },
-  { icon: Brain, label: 'Trauma & complex trauma' },
+  { icon: Brain, label: 'Trauma, complex trauma & PTSD' },
   { icon: Star, label: 'Self-esteem & confidence' },
   { icon: MessageCircle, label: 'General counselling & growth' },
 ]
