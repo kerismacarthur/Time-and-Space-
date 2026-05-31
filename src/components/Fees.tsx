@@ -1,6 +1,6 @@
 export default function Fees() {
   return (
-    <section id="fees" aria-labelledby="fees-heading" className="py-16 sm:py-20 md:py-24 bg-white">
+    <section id="fees" aria-labelledby="fees-heading" className="py-16 sm:py-20 md:py-24 bg-[#f7f4f0]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 id="fees-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 sm:mb-6 leading-snug">
           How much will this cost?
