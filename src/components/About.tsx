@@ -11,7 +11,7 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 mb-12 sm:mb-20">
           <div>
             <p className="text-stone-700 text-lg leading-relaxed mb-4">
-              We take an integrative approach, drawing on person-centred, trauma-informed, cognitive-behavioural, and mindfulness-based practices to tailor our work to each person's unique needs.
+              We take an integrative approach, drawing on person-centred, trauma-informed, cognitive-behavioural, and mindfulness-based practices to tailor our work to each person's hopes, their unique needs and lived experience.
             </p>
             <p className="text-stone-700 text-lg leading-relaxed">
               We also know that your needs and perspective may shift along the way. Building a relationship where you feel confident to ask questions from the outset and share feedback along the way, is central to how we work.
