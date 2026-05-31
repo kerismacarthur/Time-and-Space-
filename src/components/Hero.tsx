@@ -25,7 +25,7 @@ export default function Hero({ onBookNow }: { onBookNow: () => void }) {
               Or perhaps fear of the future is pulling you away from the present. Maybe it's all of the above — quietly wearing on your sense of self and impacting your connections with the people around you.
             </p>
             <p className="text-stone-700 text-lg leading-relaxed mb-6 sm:mb-8">
-              If you're curious about what working with us looks like, we'd love to hear from you.
+              No matter what's prompting you to explore counselling, we believe seeking support is courageous; a gift we give to ourselves. If you're curious about what working with us looks like, we'd love to hear from you.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <button
