@@ -8,12 +8,7 @@ export default function Fees() {
         <h2 id="fees-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 sm:mb-6 leading-snug">
           How much will this cost?
         </h2>
-        <p className="text-stone-700 text-lg leading-relaxed mb-10 sm:mb-14 max-w-2xl">
-          We believe quality mental health support should be accessible. If cost is a
-          barrier, please reach out — we're happy to have an honest conversation.
-        </p>
-
-        <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
+<div className="grid md:grid-cols-2 gap-5 sm:gap-8">
           <div className="bg-white rounded-2xl sm:rounded-3xl p-7 sm:p-10">
             <div className="mb-4">
               <p className="text-stone-600 text-sm mb-1">Individual counselling</p>
