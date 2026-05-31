@@ -53,7 +53,7 @@ export default function Fees() {
                 counselling sessions.
               </p>
             </div>
-            <div className="bg-[#f7f4f0] rounded-xl sm:rounded-2xl p-6 sm:p-8">
+            <div className="bg-[#e8f0e9] rounded-xl sm:rounded-2xl p-6 sm:p-8">
               <h3 className="font-semibold text-stone-900 mb-2 text-base">Cancellation policy</h3>
               <p className="text-stone-700 leading-relaxed text-base">
                 We ask for 24 hours' notice for cancellations or rescheduling.
