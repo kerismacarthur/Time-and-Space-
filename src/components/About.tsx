@@ -1,4 +1,3 @@
-import { Sprout, Leaf } from 'lucide-react'
 
 export default function About() {
   return (
@@ -37,9 +36,6 @@ export default function About() {
         {/* Team */}
         <div className="grid sm:grid-cols-2 gap-5 sm:gap-8">
           <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-6 sm:p-8">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-5 sm:mb-6" aria-hidden="true">
-              <Sprout className="text-[#4a6e4c]" size={22} />
-            </div>
             <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Keris</h3>
             <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
               Counsellor & Psychotherapist
@@ -57,9 +53,6 @@ export default function About() {
           </article>
 
           <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-6 sm:p-8">
-            <div className="w-12 h-12 sm:w-16 sm:h-16 bg-[#e8f0e9] rounded-full flex items-center justify-center mb-5 sm:mb-6" aria-hidden="true">
-              <Leaf className="text-[#4a6e4c]" size={22} />
-            </div>
             <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Pia</h3>
             <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
               Counsellor & Psychotherapist
