@@ -42,24 +42,17 @@ export default function Services() {
           ))}
         </ul>
 
-        {/* How we work */}
-        <div className="bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-10 border border-stone-200">
-          <h3 className="sr-only">How sessions work</h3>
-          <dl className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8">
-            <div>
-              <dt className="text-[#4a6e4c] text-sm font-semibold mb-2">Session format</dt>
-              <dd className="text-stone-700 text-base">50-minute individual sessions, weekly or fortnightly</dd>
-            </div>
-            <div className="border-t sm:border-t-0 sm:border-l border-stone-200 pt-4 sm:pt-0 sm:pl-8">
-              <dt className="text-[#4a6e4c] text-sm font-semibold mb-2">How we meet</dt>
-              <dd className="text-stone-700 text-base">In-person or telehealth — available Australia-wide</dd>
-            </div>
-            <div className="border-t sm:border-t-0 sm:border-l border-stone-200 pt-4 sm:pt-0 sm:pl-8">
-              <dt className="text-[#4a6e4c] text-sm font-semibold mb-2">Getting started</dt>
-              <dd className="text-stone-700 text-base">Free 15-minute phone or video consultation — no commitment required</dd>
-            </div>
-          </dl>
-        </div>
+        <p className="text-stone-700 text-lg leading-relaxed mb-4 max-w-2xl">
+          We offer 50 minute individual sessions, with the option of 90 minute sessions by arrangement. The frequency is determined by you, and we recognise that the rhythm of your needs may change over time. You just let us know what feels right for you.
+        </p>
+        <p className="text-stone-700 text-lg leading-relaxed mb-4 max-w-2xl">
+          Additionally, we understand that not everyone wants to engage in person, and both Pia and Keris are adept at providing counselling via telehealth and online.
+        </p>
+        <p className="text-stone-700 text-lg leading-relaxed max-w-2xl">
+          If you'd like to find out more, please contact us via{' '}
+          <a href="mailto:hello@timeandspace-counselling.com.au" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">hello@timeandspace-counselling.com.au</a>{' '}
+          and we can organise time to have a quick chat about how we can support you best.
+        </p>
       </div>
     </section>
   )
