@@ -82,6 +82,14 @@ export default function Services() {
           </li>
           <li className="flex items-start gap-3">
             <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
+            <span><strong>1800RESPECT</strong> — domestic, family & sexual violence support: <a href="tel:1800737732" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">1800 737 732</a></span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
+            <span><strong>13YARN</strong> — 24/7 crisis support for First Nations people: <a href="tel:139276" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">13 92 76</a></span>
+          </li>
+          <li className="flex items-start gap-3">
+            <span className="text-[#4a6e4c] font-bold shrink-0">•</span>
             <span><strong>Emergency services:</strong> <a href="tel:000" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">000</a></span>
           </li>
         </ul>
