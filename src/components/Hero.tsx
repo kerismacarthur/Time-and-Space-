@@ -47,13 +47,9 @@ export default function Hero() {
 
           {/* Mobile-only quote */}
           <div className="md:hidden bg-white rounded-2xl p-6 border border-stone-200" aria-hidden="true">
-            <p className="font-serif text-base text-stone-700 leading-relaxed italic">
-              "We're here to offer the time and space you need."
+            <p className="font-serif text-base text-stone-800 leading-relaxed italic">
+              "We prioritise collaboration and curiosity and believe that meaningful change, whether in outlook, understanding, or circumstance, happens when people feel safe and supported."
             </p>
-            <div className="flex items-center gap-2 mt-3">
-              <div className="w-6 h-px bg-[#4a6e4c]" />
-              <span className="text-xs text-stone-600">Keris & Pia</span>
-            </div>
           </div>
         </div>
       </div>
