@@ -6,7 +6,7 @@ export default function Acknowledgement() {
           Acknowledgement of Country
         </p>
         <p className="text-stone-700 text-base sm:text-lg leading-relaxed max-w-2xl">
-          We acknowledge the Traditional Custodians of the lands on which we live and work, and pay our respects to Elders past, present and emerging. We recognise the ongoing connection of First Nations peoples to Country, culture and community, and honour their enduring contributions to this land.
+          We acknowledge the traditional country of the Dharug and Gundungurra peoples, on which we live and work, love and learn. We respect their cultural heritage, beliefs and continuing relationship with the land, waters and sky, and honour their enduring connection to Country. Sovereignty was never ceded.
         </p>
       </div>
     </section>
