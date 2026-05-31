@@ -2,11 +2,8 @@ export default function Fees() {
   return (
     <section id="fees" aria-labelledby="fees-heading" className="py-16 sm:py-20 md:py-24 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-3 sm:mb-4" aria-hidden="true">
-          Fees
-        </p>
         <h2 id="fees-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 sm:mb-6 leading-snug">
-          Transparent and straightforward
+          How much will this cost?
         </h2>
         <p className="text-stone-700 text-lg leading-relaxed mb-10 sm:mb-14 max-w-2xl">
           We believe quality mental health support should be accessible. If cost is a
