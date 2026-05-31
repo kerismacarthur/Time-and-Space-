@@ -1,6 +1,6 @@
 import { Leaf } from 'lucide-react'
 
-export default function Hero({ onBookNow }: { onBookNow: () => void }) {
+export default function Hero() {
   return (
     <section
       id="home"

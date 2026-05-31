@@ -22,7 +22,7 @@ function App() {
       <Navbar />
 
       <main id="main-content">
-        <Hero onBookNow={() => setWizardOpen(true)} />
+        <Hero />
         <About />
         <Services />
         <Fees />
