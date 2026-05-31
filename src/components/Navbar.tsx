@@ -9,7 +9,7 @@ const links = [
   { label: 'Contact', href: '#contact' },
 ]
 
-export default function Navbar({ onBookNow }: { onBookNow: () => void }) {
+export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (

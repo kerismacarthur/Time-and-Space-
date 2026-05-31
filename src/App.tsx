@@ -19,7 +19,7 @@ function App() {
         Skip to main content
       </a>
 
-      <Navbar onBookNow={() => setWizardOpen(true)} />
+      <Navbar />
 
       <main id="main-content">
         <Hero onBookNow={() => setWizardOpen(true)} />
