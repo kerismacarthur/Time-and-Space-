@@ -17,8 +17,8 @@ export default function Fees() {
           {/* Fee card */}
           <div className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-7 sm:p-10">
             <p className="text-stone-600 text-sm mb-1 sm:mb-2">Individual counselling</p>
-            <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and thirty to one hundred and sixty dollars per session">
-              $130–$160
+            <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and forty dollars per session">
+              $140
             </p>
             <p className="text-stone-600 text-sm mb-6 sm:mb-8">per 50-minute session</p>
             <hr className="border-stone-300 mb-6 sm:mb-8" />
