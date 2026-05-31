@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
 import Fees from './components/Fees'
+import Acknowledgement from './components/Acknowledgement'
 import Footer from './components/Footer'
 import './index.css'
 
@@ -21,6 +22,7 @@ function App() {
         <About />
         <Services />
         <Fees />
+        <Acknowledgement />
       </main>
 
       <Footer />
