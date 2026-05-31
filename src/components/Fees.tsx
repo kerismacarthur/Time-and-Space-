@@ -23,11 +23,7 @@ export default function Fees() {
             <p className="text-stone-600 text-sm mb-6 sm:mb-8">per 50-minute session</p>
             <hr className="border-stone-300 mb-6 sm:mb-8" />
             <ul className="space-y-3 text-stone-700 text-base" aria-label="What's included">
-              <li className="flex items-start gap-3">
-                <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
-                Free 15-minute initial consultation
-              </li>
-              <li className="flex items-start gap-3">
+<li className="flex items-start gap-3">
                 <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
                 In-person and telehealth available
               </li>
