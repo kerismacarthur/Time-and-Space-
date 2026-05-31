@@ -24,8 +24,7 @@ export default function Services() {
           How we help.
         </h2>
         <p className="text-stone-700 text-lg leading-relaxed mb-10 sm:mb-14 max-w-2xl">
-          We work with adults across a wide range of concerns. Whatever brings you here,
-          you don't have to navigate it alone.
+          The categories below might suggest that the reasons people seek support fit neatly into tidy, little boxes. In our experience, it's rarely that simple; the truth may be a messy intersection of many competing concerns. Whatever brings you here, we'll meet you with openness, compassion and honesty.
         </p>
 
         <ul
