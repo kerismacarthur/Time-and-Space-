@@ -20,6 +20,7 @@ export default function Fees() {
               <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and forty dollars per session">$140</p>
               <p className="text-stone-600 text-sm">per 50-minute session</p>
             </div>
+            <hr className="border-stone-300 mb-6 sm:mb-8" />
             <div className="mb-6 sm:mb-8">
               <p className="text-stone-600 text-sm mb-1">Relationship counselling</p>
               <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and seventy dollars per session">$170</p>
