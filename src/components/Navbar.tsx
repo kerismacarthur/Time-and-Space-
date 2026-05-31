@@ -6,7 +6,6 @@ const links = [
   { label: 'About', href: '#about' },
   { label: 'Services', href: '#services' },
   { label: 'Fees', href: '#fees' },
-  { label: 'Contact', href: '#contact' },
 ]
 
 export default function Navbar() {
@@ -39,7 +38,7 @@ export default function Navbar() {
             className="text-sm bg-[#4a6e4c] text-white px-5 py-2 rounded-full hover:bg-[#3d5e3f] transition-colors whitespace-nowrap font-medium"
             aria-label="Get in touch via email"
           >
-            Get in touch
+            Contact us
           </a>
         </nav>
 
