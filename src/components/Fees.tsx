@@ -14,24 +14,48 @@ export default function Fees() {
         </p>
 
         <div className="grid md:grid-cols-2 gap-5 sm:gap-8">
-          {/* Fee card */}
-          <div className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-7 sm:p-10">
-            <p className="text-stone-600 text-sm mb-1 sm:mb-2">Individual counselling</p>
-            <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and forty dollars per session">
-              $140
-            </p>
-            <p className="text-stone-600 text-sm mb-6 sm:mb-8">per 50-minute session</p>
-            <hr className="border-stone-300 mb-6 sm:mb-8" />
-            <ul className="space-y-3 text-stone-700 text-base" aria-label="What's included">
-<li className="flex items-start gap-3">
-                <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
-                In-person and telehealth available
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
-                Invoice provided for private health claims
-              </li>
-            </ul>
+          {/* Fee cards */}
+          <div className="flex flex-col gap-5 sm:gap-8">
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-7 sm:p-10">
+              <p className="text-stone-600 text-sm mb-1 sm:mb-2">Individual counselling</p>
+              <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and forty dollars per session">
+                $140
+              </p>
+              <p className="text-stone-600 text-sm mb-6 sm:mb-8">per 50-minute session</p>
+              <hr className="border-stone-300 mb-6 sm:mb-8" />
+              <ul className="space-y-3 text-stone-700 text-base" aria-label="What's included">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
+                  In-person and telehealth available
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
+                  Invoice provided for private health claims
+                </li>
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl sm:rounded-3xl p-7 sm:p-10">
+              <p className="text-stone-600 text-sm mb-1 sm:mb-2">Relationship counselling</p>
+              <p className="font-serif text-4xl sm:text-5xl text-stone-900 mb-1" aria-label="One hundred and seventy dollars per session">
+                $170
+              </p>
+              <p className="text-stone-600 text-sm mb-6 sm:mb-8">per 50-minute session</p>
+              <hr className="border-stone-300 mb-6 sm:mb-8" />
+              <ul className="space-y-3 text-stone-700 text-base" aria-label="What's included">
+                <li className="flex items-start gap-3">
+                  <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
+                  90-minute sessions available by request
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
+                  In-person and telehealth available
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-[#4a6e4c] mt-0.5 shrink-0 font-bold" aria-hidden="true">✓</span>
+                  Invoice provided for private health claims
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="flex flex-col gap-4 sm:gap-6">
