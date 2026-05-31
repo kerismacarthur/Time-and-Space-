@@ -51,7 +51,7 @@ export default function Services() {
         <p className="text-stone-700 text-lg leading-relaxed max-w-2xl">
           If you'd like to find out more, please contact us via{' '}
           <a href="mailto:hello@timeandspace-counselling.com.au" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">hello@timeandspace-counselling.com.au</a>{' '}
-          and we can organise time to have a quick chat about how we can support you best.
+          and we can organise a time to chat about how we can support you best.
         </p>
       </div>
     </section>
