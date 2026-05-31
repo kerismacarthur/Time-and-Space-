@@ -31,7 +31,7 @@ export default function Hero() {
                 href="#about"
                 className="bg-[#4a6e4c] text-white px-8 py-4 rounded-full text-center hover:bg-[#3d5e3f] transition-colors text-base font-medium"
               >
-                Learn more
+                Scroll down to learn more
               </a>
             </div>
           </div>
