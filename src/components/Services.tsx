@@ -101,7 +101,7 @@ export default function Services() {
             </ul>
             <blockquote className="bg-[#f7f4f0] rounded-2xl p-6 sm:p-8">
               <p className="font-serif text-lg text-stone-800 leading-relaxed italic">
-                Please note: we are not able to diagnose or treat mental disorders and as such, are not able to provide any documentation to that effect. If you require a licensed mental health professional, (ie: a psychiatrist or psychologist) please contact your GP to organise a referral.
+                Please note: we are not able to diagnose or treat mental disorders and as such, are not able to provide any documentation to that effect.<br /><br />If you require a licensed mental health professional, (ie: a psychiatrist or psychologist) please contact your GP to organise a referral.
               </p>
             </blockquote>
           </div>
