@@ -57,13 +57,13 @@ export default function About() {
               Counsellor & Psychotherapist
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              With a background in drug and alcohol counselling and suicide prevention, Pia brings a calm, non-judgemental presence to complex experiences and works from a harm-minimisation perspective. She takes a holistic view of wellbeing, recognising the impact of relationships, family dynamics, culture, work, sleep, movement, and daily life on emotional health.
+              With a background in drug and alcohol counselling and suicide prevention, Pia brings a calm, non-judgemental presence to complex experiences, working from a harm-minimisation perspective. She takes a holistic view of wellbeing, recognising how relationships, family dynamics, culture, work, sleep, movement and daily life all shape emotional health.
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              Having grown up in Europe, Pia brings a cultural lens to her work and is particularly interested in how people develop a sense of self, belonging, and connection. She supports clients in building emotional awareness, self-acceptance, and healthier ways of relating to themselves and others.
+              Having grown up in Europe, Pia brings a cultural lens to her work and is particularly interested in how people develop a sense of self, belonging and connection. She supports clients in building emotional awareness, self-acceptance and healthier ways of relating to themselves and others.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              In her work with couples, Pia helps partners shift out of blame and disconnection and toward clearer communication, deeper understanding, and a sense of being on the same team.
+              In her work with couples, Pia helps partners move out of blame and disconnection and toward clearer communication, deeper understanding and a sense of being on the same team.
             </p>
           </article>
         </div>
