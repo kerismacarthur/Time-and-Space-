@@ -41,14 +41,13 @@ export default function About() {
               Counsellor & Psychotherapist
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
-              Keris brings specialist experience working with drug and alcohol use through
-              her work at Lives Lived Well, where she has supported individuals through
-              some of the most challenging moments of their lives.
+              Keris' therapeutic approach is grounded in compassion and a genuine curiosity about how we make sense of ourselves, our relationships and our place in the world. She draws on evidence-based practice alongside a firm belief that connection and presence are foundational to healing and ongoing growth.
+            </p>
+            <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
+              With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. In private practice, she draws on an intersectional lens to complement her person-centred, process-oriented approach.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              In private practice, Keris works with adults across a range of concerns —
-              including substance use, anxiety, depression, relationship difficulties, and
-              life transitions.
+              She works collaboratively, drawing on cognitive behavioural therapy, cognitive processing therapy, internal family systems, motivational interviewing, narrative therapy and focusing to shape each therapeutic encounter.
             </p>
           </article>
 
