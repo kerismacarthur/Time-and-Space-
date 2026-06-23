@@ -5,9 +5,13 @@ export default function Fees() {
         <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase mb-3 sm:mb-4" aria-hidden="true">
           Fees
         </p>
-        <h2 id="fees-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 sm:mb-6 leading-snug">
+        <h2 id="fees-heading" className="font-serif text-3xl sm:text-4xl text-stone-900 mb-4 leading-snug">
           How much will this cost?
         </h2>
+        <p className="text-stone-700 text-base sm:text-lg leading-relaxed mb-6 sm:mb-8 max-w-2xl">
+          For more information regarding our fee schedule, please contact us via{' '}
+          <a href="mailto:hello@timeandspace-counselling.com.au" className="text-[#4a6e4c] font-semibold underline hover:text-[#3d5e3f] transition-colors">hello@timeandspace-counselling.com.au</a>
+        </p>
 
         <div className="flex flex-col gap-4 sm:gap-6 max-w-2xl">
           <div className="bg-[#e8f0e9] rounded-xl sm:rounded-2xl p-4 sm:p-6 lg:p-8">
