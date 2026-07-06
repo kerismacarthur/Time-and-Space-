@@ -36,8 +36,8 @@ export default function About() {
         {/* Team */}
         <div className="grid sm:grid-cols-2 gap-5 sm:gap-8">
           <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
-            <div className="flex items-end justify-between mb-4 sm:mb-5">
-              <div>
+            <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between mb-4 sm:mb-5">
+              <div className="order-2 sm:order-1 text-center sm:text-left mt-3 sm:mt-0">
                 <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Pia</h3>
                 <p className="text-[#4a6e4c] text-sm font-semibold">
                   Counsellor & Psychotherapist
@@ -46,7 +46,7 @@ export default function About() {
               <img
                 src="/pia.jpg"
                 alt="Pia Storey"
-                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shrink-0"
+                className="order-1 sm:order-2 w-28 h-28 sm:w-28 sm:h-28 rounded-full object-cover object-top shrink-0"
               />
             </div>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
@@ -61,8 +61,8 @@ export default function About() {
           </article>
 
           <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
-            <div className="flex items-end justify-between mb-4 sm:mb-5">
-              <div>
+            <div className="flex flex-col items-center sm:flex-row sm:items-end sm:justify-between mb-4 sm:mb-5">
+              <div className="order-2 sm:order-1 text-center sm:text-left mt-3 sm:mt-0">
                 <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Keris</h3>
                 <p className="text-[#4a6e4c] text-sm font-semibold">
                   Counsellor & Psychotherapist
@@ -71,7 +71,7 @@ export default function About() {
               <img
                 src="/keris.jpg"
                 alt="Keris Macarthur"
-                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shrink-0"
+                className="order-1 sm:order-2 w-28 h-28 sm:w-28 sm:h-28 rounded-full object-cover object-top shrink-0"
               />
             </div>
             <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">

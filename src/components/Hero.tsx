@@ -12,7 +12,7 @@ export default function Hero() {
         {/* Sparkle cluster + label — referencing business card aesthetic */}
         <div className="flex items-center gap-2 sm:gap-3 mb-5 sm:mb-7" aria-hidden="true">
           <Sparkle size={18} />
-          <Sparkle size={11} />
+          <Sparkle size={11} className="-translate-y-2" />
           <p className="text-[#4a6e4c] text-sm font-semibold tracking-widest uppercase">
             Counselling & Psychotherapy
           </p>
