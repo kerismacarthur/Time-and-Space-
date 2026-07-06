@@ -36,26 +36,19 @@ export default function About() {
         {/* Team */}
         <div className="grid sm:grid-cols-2 gap-5 sm:gap-8">
           <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
-            <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Keris</h3>
-            <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
-              Counsellor & Psychotherapist
-            </p>
-            <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
-              Keris' therapeutic approach is grounded in compassion and a genuine curiosity about how we make sense of ourselves, our relationships and our place in the world. She draws on evidence-based practice alongside a firm belief that connection and presence are foundational to healing and ongoing growth.
-            </p>
-            <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
-              With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. In private practice, she draws on an intersectional lens to complement her person-centred, process-oriented approach.
-            </p>
-            <p className="text-stone-700 text-base leading-relaxed">
-              She works collaboratively, drawing on cognitive behavioural therapy, cognitive processing therapy, internal family systems, motivational interviewing, narrative therapy and focusing to shape each therapeutic encounter.
-            </p>
-          </article>
-
-          <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
-            <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Pia</h3>
-            <p className="text-[#4a6e4c] text-sm font-semibold mb-3 sm:mb-4">
-              Counsellor & Psychotherapist
-            </p>
+            <div className="flex items-end justify-between mb-4 sm:mb-5">
+              <div>
+                <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Pia</h3>
+                <p className="text-[#4a6e4c] text-sm font-semibold">
+                  Counsellor & Psychotherapist
+                </p>
+              </div>
+              <img
+                src="/pia.jpg"
+                alt="Pia Storey"
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shrink-0"
+              />
+            </div>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
               With a background in drug and alcohol counselling and suicide prevention, Pia brings a calm, non-judgemental presence to complex experiences, working from a harm-minimisation perspective. She takes a holistic view of wellbeing, recognising how relationships, family dynamics, culture, work, sleep, movement and daily life all shape emotional health.
             </p>
@@ -64,6 +57,31 @@ export default function About() {
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
               In her work with couples, Pia helps partners move out of blame and disconnection and toward clearer communication, deeper understanding and a sense of being on the same team.
+            </p>
+          </article>
+
+          <article className="bg-[#f7f4f0] rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8">
+            <div className="flex items-end justify-between mb-4 sm:mb-5">
+              <div>
+                <h3 className="font-serif text-xl sm:text-2xl text-stone-900 mb-1">Keris</h3>
+                <p className="text-[#4a6e4c] text-sm font-semibold">
+                  Counsellor & Psychotherapist
+                </p>
+              </div>
+              <img
+                src="/keris.jpg"
+                alt="Keris Macarthur"
+                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover shrink-0"
+              />
+            </div>
+            <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
+              Keris' therapeutic approach is grounded in compassion and a genuine curiosity about how we make sense of ourselves, our relationships and our place in the world. She draws on evidence-based practice alongside a firm belief that connection and presence are foundational to healing and ongoing growth.
+            </p>
+            <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
+              With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. In private practice, she draws on an intersectional lens to complement her person-centred, process-oriented approach.
+            </p>
+            <p className="text-stone-700 text-base leading-relaxed">
+              She works collaboratively, drawing on cognitive behavioural therapy, cognitive processing therapy, internal family systems, motivational interviewing, narrative therapy and focusing to shape each therapeutic encounter.
             </p>
           </article>
         </div>
