@@ -49,10 +49,10 @@ export default function Hero() {
           {/* Desktop quote card */}
           <div className="hidden md:block" aria-hidden="true">
             <div className="bg-white rounded-3xl p-8 lg:p-10 shadow-sm border border-stone-200">
-              <div className="flex items-center gap-2 mb-5">
-                <Sparkle size={10} />
+              <div className="flex items-center justify-center gap-2 mb-5">
+                <Sparkle size={10} className="translate-y-2 -mr-2" />
                 <Sparkle size={22} />
-                <Sparkle size={13} />
+                <Sparkle size={13} className="-translate-y-1" />
               </div>
               <blockquote className="font-serif text-lg lg:text-xl text-stone-800 leading-relaxed italic">
                 "We prioritise collaboration and curiosity and believe that meaningful change, whether in outlook, understanding, or circumstance, happens when people feel safe and supported."
@@ -62,7 +62,7 @@ export default function Hero() {
 
           {/* Mobile quote card */}
           <div className="md:hidden bg-white rounded-2xl p-6 border border-stone-200" aria-hidden="true">
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center justify-center gap-2 mb-4">
               <Sparkle size={14} />
               <Sparkle size={9} />
             </div>
