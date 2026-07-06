@@ -18,8 +18,8 @@ export default function Footer() {
             </a>
           </div>
 
-          <nav aria-label="Footer navigation" className="flex gap-6 sm:gap-10">
-            <ul className="flex flex-col gap-2 text-sm sm:text-base list-none p-0 m-0">
+          <nav aria-label="Footer navigation" className="flex gap-6 sm:gap-10 sm:mt-9">
+            <ul className="flex flex-col gap-0 text-lg list-none p-0 m-0">
               <li><a href="#about" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">About</a></li>
               <li><a href="#services" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Services</a></li>
               <li><a href="#fees" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Fees</a></li>
