@@ -9,6 +9,13 @@ export default function Footer() {
               Counselling & Psychotherapy.<br />
               In-person and telehealth, Australia-wide.
             </p>
+            <a
+              href="mailto:hello@timeandspace-counselling.com.au"
+              className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2 text-lg mt-6 inline-block"
+              aria-label="Send an email to Time and Space"
+            >
+              hello@timeandspace-counselling.com.au
+            </a>
           </div>
 
           <nav aria-label="Footer navigation" className="flex gap-6 sm:gap-10">
@@ -17,15 +24,6 @@ export default function Footer() {
               <li><a href="#services" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Services</a></li>
               <li><a href="#fees" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Fees</a></li>
             </ul>
-            <div className="text-sm sm:text-base">
-              <a
-                href="mailto:hello@timeandspace-counselling.com.au"
-                className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2 break-all"
-                aria-label="Send an email to Time and Space"
-              >
-                hello@timeandspace-counselling.com.au
-              </a>
-            </div>
           </nav>
         </div>
 
