@@ -11,7 +11,7 @@ export default function Footer() {
             </p>
             <a
               href="mailto:hello@timeandspace-counselling.com.au"
-              className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2 text-lg mt-6 inline-block"
+              className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2 text-base sm:text-lg mt-6 inline-block"
               aria-label="Send an email to Time and Space"
             >
               hello@timeandspace-counselling.com.au
@@ -19,7 +19,7 @@ export default function Footer() {
           </div>
 
           <nav aria-label="Footer navigation" className="flex gap-6 sm:gap-10 sm:mt-9">
-            <ul className="flex flex-col gap-0 text-lg list-none p-0 m-0">
+            <ul className="flex flex-col gap-0 text-base sm:text-lg list-none p-0 m-0">
               <li><a href="#about" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">About</a></li>
               <li><a href="#services" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Services</a></li>
               <li><a href="#fees" className="text-stone-300 hover:text-white transition-colors hover:underline underline-offset-2">Fees</a></li>
