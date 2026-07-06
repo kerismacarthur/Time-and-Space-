@@ -46,7 +46,7 @@ export default function About() {
               <img
                 src="/pia.jpg"
                 alt="Pia Storey"
-                className="order-1 sm:order-2 w-28 h-28 sm:w-28 sm:h-28 rounded-full object-cover object-top shrink-0"
+                className="order-1 sm:order-2 w-28 h-28 sm:w-28 sm:h-28 rounded-full object-cover object-[center_25%] shrink-0"
               />
             </div>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
