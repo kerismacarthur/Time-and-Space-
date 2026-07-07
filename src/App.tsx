@@ -17,12 +17,13 @@ function App() {
 
       <Navbar />
 
+      <Acknowledgement />
+
       <main id="main-content">
         <Hero />
         <About />
         <Services />
         <Fees />
-        <Acknowledgement />
       </main>
 
       <Footer />
