@@ -50,13 +50,16 @@ export default function About() {
               />
             </div>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              With a background in drug and alcohol counselling and suicide prevention, Pia brings a calm, non-judgemental presence to complex experiences, working from a harm-minimisation perspective. She takes a holistic view of wellbeing, recognising how relationships, family dynamics, culture, work, sleep, movement and daily life all shape emotional health.
+              Pia works with individuals and couples to navigate stress and anxiety in today's fast-paced world, relationship challenges, identity, and life transitions. Her approach is collaborative, grounded, and deeply relational, taking a holistic view of wellbeing that recognises the impact of relationships, family dynamics, culture, work, sleep, movement, and daily life on emotional health.
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              Having grown up in Europe, Pia brings a cultural lens to her work and is particularly interested in how people develop a sense of self, belonging and connection. She supports clients in building emotional awareness, self-acceptance and healthier ways of relating to themselves and others.
+              Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self, belonging, and connection. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating and communicating with themselves and others.
+            </p>
+            <p className="text-stone-700 text-base leading-relaxed mb-4">
+              Working from a person-centred perspective, Pia integrates a range of evidence-based approaches to suit each client's unique needs. These include Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              In her work with couples, Pia helps partners move out of blame and disconnection and toward clearer communication, deeper understanding and a sense of being on the same team.
+              Recognising that many of life's struggles arise when we become disconnected — from ourselves, from our relationships, and from what matters most. Her role is to offer a space where that connection can be gently restored.
             </p>
           </article>
 
