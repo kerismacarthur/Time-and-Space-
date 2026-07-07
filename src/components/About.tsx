@@ -50,16 +50,13 @@ export default function About() {
               />
             </div>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              Pia works with individuals and couples navigating stress and anxiety, relationship challenges, identity, and life transitions. Her approach is collaborative, grounded, and deeply relational, taking a holistic view of wellbeing that recognises how relationships, family dynamics, culture, work, sleep, movement, and daily life shape emotional health.
+              Pia works with individuals and couples navigating stress and anxiety, relationship challenges, identity, and life transitions. Her approach is collaborative and deeply relational, taking a holistic view of wellbeing that recognises how relationships, family dynamics, culture, work, sleep, movement, and daily life shape emotional health.
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self, belonging, and connection. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others.
-            </p>
-            <p className="text-stone-700 text-base leading-relaxed mb-4">
-              Working from a person-centred perspective, Pia draws on a range of evidence-based approaches, including Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples, tailored to each client's unique needs.
+              Pia draws on a range of evidence-based approaches, including Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples, to support each client's unique needs.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              Many of life's struggles arise when we become disconnected from ourselves, from our relationships, and from what matters most. Her role is to offer a space where that connection can be gently restored.
+              Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self, belonging, and connection. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others, offering space where connection to what matters most can be gently restored.
             </p>
           </article>
 
