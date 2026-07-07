@@ -84,7 +84,7 @@ export default function About() {
               With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. In private practice, she draws on an intersectional lens to complement her person-centred, process-oriented approach.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              She works collaboratively, drawing on cognitive behavioural therapy, cognitive processing therapy, internal family systems, motivational interviewing, narrative therapy and focusing to shape each therapeutic encounter.
+              She works collaboratively, drawing on Cognitive Behavioural Therapy, Cognitive Processing Therapy, Internal Family Systems, Schema Therapy and Motivational Interviewing to shape each therapeutic encounter.
             </p>
           </article>
         </div>
