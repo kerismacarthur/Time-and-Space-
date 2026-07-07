@@ -78,7 +78,7 @@ export default function About() {
               Keris' therapeutic perspective is grounded in compassion and a genuine curiosity about how we make sense of ourselves, our relationships and our place in the world. She draws on evidence-based practice alongside a firm belief that connection and presence are foundational to healing and ongoing growth.
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
-              With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. Her way of working is anchored by the intersectionality of the individual to complement her person-centred, process-oriented approach.
+              With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. Her way of working is anchored by the intersectionality of the individual, which complements her person-centred, process-oriented approach.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
               Keris is a creative and intuitive therapist, who draws on Cognitive Behavioural Therapy, Cognitive Processing Therapy, Internal Family Systems, Schema Therapy and Motivational Interviewing to shape each therapeutic encounter and nurture genuine rapport.
