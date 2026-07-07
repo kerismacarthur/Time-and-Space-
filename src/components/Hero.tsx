@@ -5,9 +5,9 @@ export default function Hero() {
     <section
       id="home"
       aria-labelledby="hero-heading"
-      className="min-h-screen flex items-center bg-[#f7f4f0]"
+      className="min-h-screen flex items-start bg-[#f7f4f0]"
     >
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 sm:py-20 md:py-24 w-full">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pt-8 pb-16 sm:pt-10 sm:pb-20 md:pt-12 md:pb-24 w-full">
 
         {/* Sparkle cluster + label — referencing business card aesthetic */}
         <div className="flex items-center gap-2 sm:gap-3 mb-5 sm:mb-7" aria-hidden="true">
