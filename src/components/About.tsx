@@ -56,7 +56,7 @@ export default function About() {
               Pia draws on a range of evidence-based approaches, including Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples, to support each client's unique needs.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self, belonging, and connection. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others, offering space where connection to what matters most can be gently restored.
+              Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self and belonging. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others, offering space where connection to what matters most can be gently restored.
             </p>
           </article>
 
@@ -75,7 +75,7 @@ export default function About() {
               />
             </div>
             <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
-              Keris' therapeutic approach is grounded in compassion and a genuine curiosity about how we make sense of ourselves, our relationships and our place in the world. She draws on evidence-based practice alongside a firm belief that connection and presence are foundational to healing and ongoing growth.
+              Keris' therapeutic perspective is grounded in compassion and a genuine curiosity about how we make sense of ourselves, our relationships and our place in the world. She draws on evidence-based practice alongside a firm belief that connection and presence are foundational to healing and ongoing growth.
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-3 sm:mb-4">
               With specialist experience in drug and alcohol counselling and a background in suicide prevention, Keris brings both depth and warmth to her work with individuals, couples and groups. In private practice, she draws on an intersectional lens to complement her person-centred, process-oriented approach.
