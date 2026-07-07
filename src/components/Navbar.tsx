@@ -12,7 +12,7 @@ export default function Navbar() {
 
         {/* Mobile layout */}
         <div className="sm:hidden flex items-center justify-between py-3">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 items-start">
             <a
               href="#home"
               className="font-serif text-lg text-stone-900 tracking-wide focus-visible:outline-2"
