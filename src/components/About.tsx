@@ -53,7 +53,7 @@ export default function About() {
               Pia works with individuals and couples navigating stress and anxiety, relationship challenges, identity, and life transitions. Her approach is collaborative and deeply relational, taking a holistic view of wellbeing that recognises how relationships, family dynamics, culture, work, sleep, movement, and daily life shape emotional health.
             </p>
             <p className="text-stone-700 text-base leading-relaxed mb-4">
-              Pia draws on a range of evidence-based approaches, including Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples, to support each client's unique needs.
+              Pia utilises a range of evidence-based approaches, including Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples, to support each client's unique needs.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
               Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self and belonging. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others, offering space where connection to what matters most can be gently restored.
