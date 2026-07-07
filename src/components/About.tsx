@@ -56,7 +56,7 @@ export default function About() {
               Pia utilises a range of evidence-based approaches, including Acceptance and Commitment Therapy, Attachment Theory, Cognitive Behavioural Therapy, Schema Therapy, and the Gottman Method for couples, to support each client's unique needs.
             </p>
             <p className="text-stone-700 text-base leading-relaxed">
-              Having grown up in Europe, Pia brings a multicultural lens to her work and is particularly interested in how people develop a sense of self and belonging. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others, offering space where connection to what matters most can be gently restored.
+              Having grown up in Europe, Pia's multicultural lens underpins her particular interest in how people develop a sense of self and belonging. She supports clients in cultivating emotional awareness, self-acceptance, and healthier ways of relating to themselves and others, offering space where connection to what matters most can be gently restored.
             </p>
           </article>
 
